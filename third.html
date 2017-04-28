@@ -7,8 +7,61 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/photo-gallery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
+
+<style>
+      ul {         
+          padding:0 0 0 0;
+          margin:0 0 0 0;
+      }
+      ul li {     
+          list-style:none;
+          margin-bottom:25px;           
+      }
+      ul li img {
+          cursor: pointer;
+      }
+      .modal-body {
+          padding:5px !important;
+      }
+      .modal-content {
+          border-radius:0;
+      }
+      .modal-dialog img {
+          text-align:center;
+          margin:0 auto;
+      }
+    .controls{          
+        width:50px;
+        display:block;
+        font-size:11px;
+        padding-top:8px;
+        font-weight:bold;          
+    }
+    .next {
+        float:right;
+        text-align:right;
+    }
+      /*override modal for demo only*/
+      .modal-dialog {
+          max-width:500px;
+          padding-top: 90px;
+      }
+      @media screen and (min-width: 768px){
+          .modal-dialog {
+              width:500px;
+              padding-top: 90px;
+          }          
+      }
+      @media screen and (max-width:1500px){
+          #ads {
+              display:none;
+          }
+      }
+  </style>
 
 <body>
 	<!--navbar-->
@@ -26,8 +79,8 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       			<ul class="nav navbar-nav">
         			<li><a href="index.html">Main</a></li>
-              <li><a href="second.html">Second</a></li>
-              <li class="active"><a href="third.html">Third <span class="sr-only">(current)</span></a></li>
+              <li><a href="second.html">Models</a></li>
+              <li class="active"><a href="third.html">Gallery <span class="sr-only">(current)</span></a></li>
       			</ul>
       			<ul class="nav navbar-nav navbar-right">
         			<li class="dropdown">
@@ -44,7 +97,102 @@
     		</div>
   		</div>
 	</nav>
+  <!--content-->
+  <div class="panel panel-info">
+    <div class="panel-heading">Subaru models gallery</div>
+    <div class="panel-body">
+      <ul class="row">
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/impreza/impreza.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/impreza/impreza1.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/impreza/impreza2.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/impreza/impreza3.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/impreza/impreza4.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/impreza/impreza5.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/impreza/impreza6.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/impreza/impreza7.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/impreza/impreza8.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/impreza/impreza9.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/impreza/impreza10.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/impreza/impreza11.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/impreza/impreza12.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/legacy/legacy.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/legacy/legacy1.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/legacy/legacy2.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/legacy/legacy3.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/legacy/legacy4.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/legacy/legacy5.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/legacy/legacy6.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/legacy/legacy7.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/legacy/legacy8.jpg">
+        </li>
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img class="img-responsive" src="img/legacy/legacy9.jpg">
+        </li>
+      </ul>             
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">         
+            <div class="modal-body">                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	</div>
 </body>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 </html>

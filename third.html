@@ -10,58 +10,8 @@
   <script src="js/photo-gallery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
-<style>
-      ul {         
-          padding:0 0 0 0;
-          margin:0 0 0 0;
-      }
-      ul li {     
-          list-style:none;
-          margin-bottom:25px;           
-      }
-      ul li img {
-          cursor: pointer;
-      }
-      .modal-body {
-          padding:5px !important;
-      }
-      .modal-content {
-          border-radius:0;
-      }
-      .modal-dialog img {
-          text-align:center;
-          margin:0 auto;
-      }
-    .controls{          
-        width:50px;
-        display:block;
-        font-size:11px;
-        padding-top:8px;
-        font-weight:bold;          
-    }
-    .next {
-        float:right;
-        text-align:right;
-    }
-      /*override modal for demo only*/
-      .modal-dialog {
-          max-width:500px;
-          padding-top: 90px;
-      }
-      @media screen and (min-width: 768px){
-          .modal-dialog {
-              width:500px;
-              padding-top: 90px;
-          }          
-      }
-      @media screen and (max-width:1500px){
-          #ads {
-              display:none;
-          }
-      }
-  </style>
 
 <body>
 	<!--navbar-->
@@ -83,16 +33,7 @@
               <li class="active"><a href="third.html">Gallery <span class="sr-only">(current)</span></a></li>
       			</ul>
       			<ul class="nav navbar-nav navbar-right">
-        			<li class="dropdown">
-          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          				<ul class="dropdown-menu">
-            				<li><a href="#">Action</a></li>
-            				<li><a href="#">Another action</a></li>
-            				<li><a href="#">Something else here</a></li>
-            				<li role="separator" class="divider"></li>
-            				<li><a href="#">Separated link</a></li>
-          				</ul>
-        			</li>
+        			<li><a href="third.html">Gallery</a></li>
       			</ul>
     		</div>
   		</div>
@@ -103,73 +44,70 @@
     <div class="panel-body">
       <ul class="row">
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/impreza/impreza.jpg">
+          <img class="img-responsive gallery-image" src="img/impreza/impreza1.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/impreza/impreza1.jpg">
+          <img class="img-responsive gallery-image" src="img/impreza/impreza2.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/impreza/impreza2.jpg">
+          <img class="img-responsive gallery-image" src="img/impreza/impreza3.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/impreza/impreza3.jpg">
+          <img class="img-responsive gallery-image" src="img/impreza/impreza4.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/impreza/impreza4.jpg">
+          <img class="img-responsive gallery-image" src="img/impreza/impreza5.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/impreza/impreza5.jpg">
+          <img class="img-responsive gallery-image" src="img/impreza/impreza6.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/impreza/impreza6.jpg">
+          <img class="img-responsive gallery-image" src="img/impreza/impreza7.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/impreza/impreza7.jpg">
+          <img class="img-responsive gallery-image" src="img/impreza/impreza8.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/impreza/impreza8.jpg">
+          <img class="img-responsive gallery-image" src="img/impreza/impreza9.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/impreza/impreza9.jpg">
+          <img class="img-responsive gallery-image" src="img/legacy/legacy.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/impreza/impreza10.jpg">
+          <img class="img-responsive gallery-image" src="img/legacy/legacy1.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/impreza/impreza11.jpg">
+          <img class="img-responsive gallery-image" src="img/legacy/legacy2.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/impreza/impreza12.jpg">
+          <img class="img-responsive gallery-image" src="img/legacy/legacy3.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/legacy/legacy.jpg">
+          <img class="img-responsive gallery-image" src="img/legacy/legacy4.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/legacy/legacy1.jpg">
+          <img class="img-responsive gallery-image" src="img/legacy/legacy5.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/legacy/legacy2.jpg">
+          <img class="img-responsive gallery-image" src="img/legacy/legacy6.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/legacy/legacy3.jpg">
+          <img class="img-responsive gallery-image" src="img/legacy/legacy7.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/legacy/legacy4.jpg">
+          <img class="img-responsive gallery-image" src="img/outback/outback.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/legacy/legacy5.jpg">
+          <img class="img-responsive gallery-image" src="img/outback/outback1.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/legacy/legacy6.jpg">
+          <img class="img-responsive gallery-image" src="img/outback/outback2.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/legacy/legacy7.jpg">
+          <img class="img-responsive gallery-image" src="img/outback/outback3.jpg">
         </li>
         <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/legacy/legacy8.jpg">
-        </li>
-        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-          <img class="img-responsive" src="img/legacy/legacy9.jpg">
+          <img class="img-responsive gallery-image" src="img/outback/outback4.png">
         </li>
       </ul>             
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

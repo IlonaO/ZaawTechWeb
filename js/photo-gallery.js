@@ -21,8 +21,7 @@ $(document).ready(function(){
 		})
 		$('#myModal').on('hidden.bs.modal', function(){
 			$('#myModal .modal-body').html('');
-		});
-		
+		});	
    });	
 })
         
@@ -60,4 +59,11 @@ $(document).on('click', 'a.controls', function(){
 	
 	
 	return false;
+});
+
+
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
 });

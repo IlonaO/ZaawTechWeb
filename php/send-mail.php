@@ -41,9 +41,9 @@
     $email=$_POST['email'];
     $message=$_POST['message'];
 
-    $from="From: $email\r\nReturn-path: $email"; 
+    $from='From: $email\r\nReturn-path: $email'; 
         $subject="Someone from your website is contacting you"; 
-        mail("osuch.ilona@gmail.com", $subject, $message, $from);
+        mail('osuch.ilona@gmail.com', $subject, $message, $from);
     echo "<h1>Email sent!</h1>"
   ?>
 

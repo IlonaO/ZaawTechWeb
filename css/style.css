@@ -2,6 +2,11 @@
 	background-image: url(../img/gt_r.jpg);
 	background-size: cover;
 }
+.jumbotron > div > h1,
+.jumbotron > div > p {
+    color:#996515;
+  }
+
 .gallery-image{
     width:350px;
     height:130px;

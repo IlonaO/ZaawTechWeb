@@ -309,9 +309,8 @@
   }
 }
 footer {
-	background-color: #fff7e6;
 	padding-top: 2%;
-	padding-bottom: 2%
+	padding-bottom: 2%;
 }
 #panel, #flip {
     padding: 5px;
@@ -325,7 +324,7 @@ footer {
     display: none;
 }
 .box {
-  background: #fff7e6;
+  background: #fff7e6 !important;
   -webkit-transition: background-color 2s ease-out;
   -moz-transition: background-color 2s ease-out;
   -o-transition: background-color 2s ease-out;
@@ -333,6 +332,10 @@ footer {
 }
 
 .box:hover {
-  background-color: #cce0ff;
+  background-color: #cce0ff !important;
   cursor: pointer;
+}
+
+.img-center {
+    margin: 0 auto;
 }

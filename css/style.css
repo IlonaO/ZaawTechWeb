@@ -309,7 +309,7 @@
   }
 }
 footer {
-	background-color: #d6d6c2;
+	background-color: #fff7e6;
 	padding-top: 2%;
 	padding-bottom: 2%
 }
@@ -323,3 +323,16 @@ footer {
 #panel {
     padding: 2%;
     display: none;
+}
+.box {
+  background: #fff7e6;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.box:hover {
+  background-color: #cce0ff;
+  cursor: pointer;
+}

@@ -1,12 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>Main page</title>
+	<title>Contact</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
-  <script src="js/photo-gallery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
   <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
@@ -30,22 +29,24 @@
         			<li><a href="index.html">Main</a></li>
         			<li><a href="models.html">Models</a></li>
         			<li><a href="gallery.html">Gallery</a></li>
+              <li><a class="active" href="contact.html">Contact <span class="sr-only">(current)</span></a></li>
       			</ul>
       			<ul class="nav navbar-nav navbar-right">
-        			<li><a class="active" href="contact.html">Contact <span class="sr-only">(current)</span></a></li>
+            <li><a href="php/cylinder.php">Cylinder</a></li>
       			</ul>
     		</div>
   		</div>
 	</nav>
 
   <div class="container" style="margin-top:10%; padding:2% 2% 2% 2%; border-radius:20px; background-color:rgba(0, 0, 0, 0.4);">
-  <form class="col-md-12" method="post" action="php/send-mail.php">
+  <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-6">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163975.34507021058!2d19.86478919049206!3d50.046681351475264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471644c0354e18d1%3A0xb46bb6b576478abf!2zS3Jha8Ozdw!5e0!3m2!1spl!2spl!4v1493446199029" height="350" style="width:100%;border:0" allowfullscreen></iframe>                 
                         </div>
                 
                         <div class="col-md-6">
+                        <form method="post" action="php/send-mail.php">
                           <div class="form-group">
                                 <label style="color:white;">Email</label>
                                 <input type="email" class="form-control" name="email" placeholder="Enter email" required>
@@ -57,9 +58,11 @@
                             <div class="form-group">
                                <button class="btn btn-primary pull-right" type="submit">Send</button>
                             </div>
+                            </form>
                         </div>
                     </div>
-        </form>
+                    </div>
+        
 </div>
 
 </body>

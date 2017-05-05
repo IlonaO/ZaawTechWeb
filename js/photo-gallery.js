@@ -60,10 +60,3 @@ $(document).on('click', 'a.controls', function () {
 
     return false;
 });
-
-
-$(document).ready(function () {
-    $("#flip").click(function () {
-        $("#panel").slideToggle("slow");
-    });
-});

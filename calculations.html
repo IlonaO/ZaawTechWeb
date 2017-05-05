@@ -13,7 +13,7 @@
   function cyl_calc() {
     var cyl_radius = document.getElementById('cyl_radius').value;
     var cyl_height = document.getElementById('cyl_height').value;
-    surface=2*Math.PI*cyl_radius*(cyl_radius+cyl_height);
+    surface=2*Math.PI*cyl_radius*cyl_height+2*(Math.PI*(cyl_radius*cyl_radius));
     volume=Math.PI*cyl_radius*cyl_radius*cyl_height;
     alert("Cylinder volume is: " + volume.toFixed(3) + "\nCylinder surface is: " + surface.toFixed(3));
   }

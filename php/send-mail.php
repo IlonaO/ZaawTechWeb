@@ -45,7 +45,7 @@
     $from='From: $email\r\nReturn-path: $email'; 
         $subject="Someone from your website is contacting you"; 
         mail('osuch.ilona@gmail.com', $subject, $message, $from);
-    echo "<h1>Thank you " + $email + "! Your email has been sent!</h1>";
+    echo "<h3>Thank you $email!<br><br>Your email has been sent!</h3><br>";
   ?>
 
 <a class="btn btn-default" href="../index.html" role="button">Return to main page</a>

@@ -1,172 +1,211 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-	<title>Models</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-latest.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Models</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon"/>
 </head>
 
 <body>
-	<!--navbar-->
-	<nav class="navbar navbar-default navbar-fixed-top">
-  		<div class="container-fluid">
-		    <div class="navbar-header">
-      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        			<span class="sr-only">Toggle navigation</span>
-        			<span class="icon-bar"></span>
-        			<span class="icon-bar"></span>
-        			<span class="icon-bar"></span>
-      			</button>
-      			<a class="navbar-brand" href="index.html">Petrolhead</a>
-    		</div>
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      			<ul class="nav navbar-nav">
-        			<li><a href="index.html">Main</a></li>
-              <li class="active"><a href="models.html">Models <span class="sr-only">(current)</span></a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="contact.html">Contact</a></li>
-      			</ul>
-      			<ul class="nav navbar-nav navbar-right">
-            <li><a href="php/cylinder.php">Cylinder</a></li>
-      			</ul>
-    		</div>
-  		</div>
-	</nav>
-  <!--content-->
-  <div class="jumbotron">
-    <div class="container">
-      <h1>I hear a Subaru!</h1>
-      <p>BRRRRRRR</p>
+<!--navbar-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Petrolhead</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Main</a></li>
+                <li class="active"><a href="models.html">Models <span class="sr-only">(current)</span></a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="php/cylinder.php">Cylinder</a></li>
+            </ul>
+        </div>
     </div>
-  </div>
+</nav>
+<!--content-->
+<div class="jumbotron">
+    <div class="container">
+        <h1>I hear a Subaru!</h1>
+        <p>BRRRRRRR</p>
+    </div>
+</div>
 
-  <div class="container">
+<div class="container">
     <h1>Popular Subaru models</h1>
     <div class="table-responsive">
-      <table class="table table-striped">
-        <tr>
-          <th>Model name</th>
-          <th>Engines</th> 
-          <th>Production years</th>
-          <th>Variables</th>
-        </tr>
-        <tr class="warning">
-          <td><abbr title="Legendary model">Impreza</abbr></td>
-          <td>1.5 - 2.5 liters</td> 
-          <td>1992-present</td>
-          <td>GT (first model), WRX, STI</td>
-        </tr>
-        <tr>
-          <td>Legacy</td>
-          <td>2.0-3.6</td> 
-          <td>1989-present</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Outback</td>
-          <td></td> 
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Forester</td>
-          <td></td> 
-          <td>1997-present</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Tribeca</td>
-          <td></td> 
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>XV</td>
-          <td></td> 
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>BRZ</td>
-          <td></td> 
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Levorg</td>
-          <td></td> 
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
+        <table class="table table-striped">
+            <tr>
+                <th>Model name</th>
+                <th>Engines</th>
+                <th>Production years</th>
+                <th>Variables</th>
+            </tr>
+            <tr class="warning">
+                <td><abbr title="Legendary model">Impreza</abbr></td>
+                <td>1.5 - 2.5 liters</td>
+                <td>1992-present</td>
+                <td>GT (first model), WRX, STI</td>
+            </tr>
+            <tr>
+                <td>Legacy</td>
+                <td>2.0-3.6</td>
+                <td>1989-present</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Outback</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Forester</td>
+                <td></td>
+                <td>1997-present</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tribeca</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>XV</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>BRZ</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Levorg</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
     </div>
-  </div>
-  <div class="container">
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Boxer engine</a>
-        </h4>
-      </div>
-      <div id="collapse1" class="panel-collapse collapse in">
-        <div class="panel-body">
-          <p>
-          A flat engine is an internal combustion engine with horizontally-opposed cylinders. Typically, the layout has cylinders arranged in two banks on either side of a single crankshaft and is otherwise known as the boxer, or horizontally-opposed engine. The concept was patented in 1896 by engineer Karl Benz, who called it the "contra engine".
-        </p>
-        <p>
-          A boxer engine should not be confused with the opposed-piston engine, in which each cylinder has two pistons but no cylinder head. Also, if a straight engine is canted 90 degrees into the horizontal plane, it may be thought of as a "flat engine". Horizontal inline engines are quite common in industrial applications such as underfloor mounting for buses.
-          True boxers have each crankpin controlling only one piston/cylinder while the 180° engines, which superficially appear very similar, share crankpins. The 180° engine, which may be thought of as a type of V engine, is quite uncommon as it has all of the disadvantages of a flat engine, and few of the advantages.
-        </p>
-        <img class="img-responsive img-center" src="img/boxer.jpg" alt="">
-        <br>
-        <img class="img-responsive img-center" src="img/boxer2.jpg" alt="">
+</div>
+<div class="container">
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Boxer engine</a>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <p>
+                        A flat engine is an internal combustion engine with horizontally-opposed cylinders. Typically,
+                        the layout has cylinders arranged in two banks on either side of a single crankshaft and is
+                        otherwise known as the boxer, or horizontally-opposed engine. The concept was patented in 1896
+                        by engineer Karl Benz, who called it the "contra engine".
+                    </p>
+                    <p>
+                        A boxer engine should not be confused with the opposed-piston engine, in which each cylinder has
+                        two pistons but no cylinder head. Also, if a straight engine is canted 90 degrees into the
+                        horizontal plane, it may be thought of as a "flat engine". Horizontal inline engines are quite
+                        common in industrial applications such as underfloor mounting for buses.
+                        True boxers have each crankpin controlling only one piston/cylinder while the 180° engines,
+                        which superficially appear very similar, share crankpins. The 180° engine, which may be thought
+                        of as a type of V engine, is quite uncommon as it has all of the disadvantages of a flat engine,
+                        and few of the advantages.
+                    </p>
+                    <img class="img-responsive img-center" src="img/boxer.jpg" alt="">
+                    <br>
+                    <img class="img-responsive img-center" src="img/boxer2.jpg" alt="">
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Symmetrical All Wheel Drive</a>
-        </h4>
-      </div>
-      <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body">
-          <p>
-          Symmetrical All Wheel Drive (also known as Symmetrical AWD or SAWD) is a full-time four wheel drive system developed by Japanese automobile manufacturer Subaru. The SAWD system consists of a longitudinally mounted boxer engine coupled to a symmetrical drivetrain with equal length half-axles. The combination of the symmetrical layout with a flat engine and transmission balanced over the front axle provides optimum weight distribution with a low center of gravity, improving car handling characteristics. Since 1996, most international market Subaru vehicles include SAWD as standard equipment, with the rear wheel drive BRZ and kei cars as the exceptions.
-        </p>
-        <img class="img-responsive img-center" src="img/awd.jpg" alt="">
-        <br>
-        <img class="img-responsive img-center" src="img/awd3.jpg" alt="">
-      </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Subaru World Rally Team</a>
-        </h4>
-      </div>
-      <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body">
-          <p>The Subaru World Rally Team (SWRT) was Subaru's World Rally Championship (WRC) team. It used a distinctive blue with yellow color scheme that is a throwback to the sponsorship deal with State Express 555, a BAT cigarette brand popular in Asia. 555 logos were found on Subaru cars from 1993 to 2003. Subaru's WRC efforts date back to 1980, however, the team, in its current form, has existed since 1989, when the British firm Prodrive took over its operations, and its base moved from Japan to Banbury, England.</p>
-          <p>Subaru used the team to showcase its symmetrical all wheel drive technology. It has credited the increased sales of its vehicles, especially the Subaru Impreza, with its success in the World Rally Championship, in addition to popularizing its all-wheel-drive system.</p>
-          <p>Its 2008 season drivers were Petter Solberg with co-driver Phil Mills, and Chris Atkinson with co-driver Stéphane Prévot. David Richards was the team's Principal, and a founder and chairman of Prodrive. Paul Howarth was the team's operations director and team manager. He replaced David Lapworth in 2006. Richard Taylor is the team's managing director.</p>
-          <p>The team was historically an extremely strong one, competing in the WRC longer than any other manufacturer team in their current form. It has won the manufacturers' championship three times in 1995, 1996, and 1997, and the drivers' championship three times, in 1995, 2001, and 2003. The team's performance since the 2005 season, when Petter Solberg secured second position in the driver's championship, has been far lower than expected and the subject of much criticism. The team's 2006 season, one that has been described as "disappointing" by Richard Taylor, was the subject of a Discovery Channel series called Engineering the World Rally which aired in 2007. The 2007 season was little better, and called the "second season from hell" by Phil Mills. The team withdrew from WRC competition at the end of the 2008 season due to widespread economic downturn.</p>
-          <img class="img-responsive img-center" src="img/rally/1.jpg" alt="">
-          <img class="img-responsive img-center" src="img/rally/2.jpg" alt="">
-          <img class="img-responsive img-center" src="img/rally/3.jpg" alt="">
-          <img class="img-responsive img-center" src="img/rally/4.jpg" alt="">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Symmetrical All Wheel Drive</a>
+                </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>
+                        Symmetrical All Wheel Drive (also known as Symmetrical AWD or SAWD) is a full-time four wheel
+                        drive system developed by Japanese automobile manufacturer Subaru. The SAWD system consists of a
+                        longitudinally mounted boxer engine coupled to a symmetrical drivetrain with equal length
+                        half-axles. The combination of the symmetrical layout with a flat engine and transmission
+                        balanced over the front axle provides optimum weight distribution with a low center of gravity,
+                        improving car handling characteristics. Since 1996, most international market Subaru vehicles
+                        include SAWD as standard equipment, with the rear wheel drive BRZ and kei cars as the
+                        exceptions.
+                    </p>
+                    <img class="img-responsive img-center" src="img/awd.jpg" alt="">
+                    <br>
+                    <img class="img-responsive img-center" src="img/awd3.jpg" alt="">
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Subaru World Rally Team</a>
+                </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>The Subaru World Rally Team (SWRT) was Subaru's World Rally Championship (WRC) team. It used a
+                        distinctive blue with yellow color scheme that is a throwback to the sponsorship deal with State
+                        Express 555, a BAT cigarette brand popular in Asia. 555 logos were found on Subaru cars from
+                        1993 to 2003. Subaru's WRC efforts date back to 1980, however, the team, in its current form,
+                        has existed since 1989, when the British firm Prodrive took over its operations, and its base
+                        moved from Japan to Banbury, England.</p>
+                    <p>Subaru used the team to showcase its symmetrical all wheel drive technology. It has credited the
+                        increased sales of its vehicles, especially the Subaru Impreza, with its success in the World
+                        Rally Championship, in addition to popularizing its all-wheel-drive system.</p>
+                    <p>Its 2008 season drivers were Petter Solberg with co-driver Phil Mills, and Chris Atkinson with
+                        co-driver Stéphane Prévot. David Richards was the team's Principal, and a founder and chairman
+                        of Prodrive. Paul Howarth was the team's operations director and team manager. He replaced David
+                        Lapworth in 2006. Richard Taylor is the team's managing director.</p>
+                    <p>The team was historically an extremely strong one, competing in the WRC longer than any other
+                        manufacturer team in their current form. It has won the manufacturers' championship three times
+                        in 1995, 1996, and 1997, and the drivers' championship three times, in 1995, 2001, and 2003. The
+                        team's performance since the 2005 season, when Petter Solberg secured second position in the
+                        driver's championship, has been far lower than expected and the subject of much criticism. The
+                        team's 2006 season, one that has been described as "disappointing" by Richard Taylor, was the
+                        subject of a Discovery Channel series called Engineering the World Rally which aired in 2007.
+                        The 2007 season was little better, and called the "second season from hell" by Phil Mills. The
+                        team withdrew from WRC competition at the end of the 2008 season due to widespread economic
+                        downturn.</p>
+                    <img class="img-responsive img-center" src="img/rally/1.jpg" alt="">
+                    <img class="img-responsive img-center" src="img/rally/2.jpg" alt="">
+                    <img class="img-responsive img-center" src="img/rally/3.jpg" alt="">
+                    <img class="img-responsive img-center" src="img/rally/4.jpg" alt="">
+                </div>
+            </div>
+        </div>
     </div>
-  </div> 
 </div>
 
 </body>

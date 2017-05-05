@@ -28,7 +28,7 @@
               <li><a href="index.html">Main</a></li>
               <li><a href="models.html">Models</a></li>
               <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="php/contact.html">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
             <li><a href="php/cylinder.php">Cylinder</a></li>

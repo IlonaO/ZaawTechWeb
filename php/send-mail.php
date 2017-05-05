@@ -31,7 +31,7 @@
               <li><a href="../contact.html">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-            <li><a href="cylinder.php">Cylinder</a></li>
+            <li><a href="../calculations.html">Calculations</a></li>
             </ul>
         </div>
       </div>

@@ -8,7 +8,7 @@
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/style.css">
-  <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+  <link href="../img/favicon.ico" rel="icon" type="image/x-icon" />
   <script>
   function cyl_calc() {
     var cyl_radius = document.getElementById('cyl_radius').value;

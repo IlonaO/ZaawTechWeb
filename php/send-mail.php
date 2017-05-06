@@ -38,17 +38,18 @@
   </nav>
 
   <div class="container">
-  <?php
-    $email=$_POST['email'];
-    $message=$_POST['message'];
+    <?php
+        $email=$_POST['email'];
+        $message=$_POST['message'];
 
-    $from='From: $email\r\nReturn-path: $email'; 
-        $subject="Someone from your website is contacting you"; 
+        $from='From: $email\r\nReturn-path: $email';
+        $subject="Someone from your website is contacting you";
         mail('osuch.ilona@gmail.com', $subject, $message, $from);
-    echo "<h3>Thank you $email!<br><br>Your email has been sent!</h3><br>";
-  ?>
+        echo "<h3>Thank you $email!<br><br>Your email has been sent!</h3><br>";
+    ?>
 
-<a class="btn btn-default" href="../index.html" role="button">Return to main page</a>
+    <a class="btn btn-default" href="../index.html" role="button">Return to main page</a>
+  </div>
 
 </body>
 </html>

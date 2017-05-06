@@ -38,17 +38,17 @@
   </nav>
 
   <div class="container">
-  <?php
-    $cone_radius = $_POST['cone_radius'];
-    $cone_height = $_POST['cone_height'];
-    $cone_volume = (pi()*$cone_radius*$cone_radius*$cone_height)/3;
-    $slant = sqrt($cone_radius*$cone_radius+$cone_height*$cone_height);
-    $cone_surface = pi()*$cone_radius*($slant+$cone_radius);
-    echo '<h3>Cone volume: '.number_format($cone_volume, 2, '.', '').'</h3>';
-    echo '<h3>Cone surface area: '.number_format($cone_surface, 2, '.', '').'</h3>';
-?>
-
-<a class="btn btn-default" href="../calculations.html" role="button">Return to calculations</a>
+    <?php
+        $cone_radius = $_POST['cone_radius'];
+        $cone_height = $_POST['cone_height'];
+        $cone_volume = (pi()*$cone_radius*$cone_radius*$cone_height)/3;
+        $slant = sqrt($cone_radius*$cone_radius+$cone_height*$cone_height);
+        $cone_surface = pi()*$cone_radius*($slant+$cone_radius);
+        echo '<h3>Cone volume: '.number_format($cone_volume, 2, '.', '').'</h3>';
+        echo '<h3>Cone surface area: '.number_format($cone_surface, 2, '.', '').'</h3>';
+    ?>
+    <a class="btn btn-default" href="../calculations.html" role="button">Return to calculations</a>
+   </div>
 
 </body>
 </html>

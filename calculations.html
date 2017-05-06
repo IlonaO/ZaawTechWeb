@@ -13,34 +13,6 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link href="img/favicon.ico" rel="icon" type="image/x-icon"/>
-    <script type="text/javascript">
-        function cyl_calc() {
-            var cyl_radius = document.getElementById('cyl_radius').value;
-            var cyl_height = document.getElementById('cyl_height').value;
-            surface = 2 * Math.PI * cyl_radius * cyl_height + 2 * (Math.PI * (cyl_radius * cyl_radius));
-            volume = Math.PI * cyl_radius * cyl_radius * cyl_height;
-            alert("Cylinder volume is: " + volume.toFixed(3) + "\nCylinder surface is: " + surface.toFixed(3));
-        }
-        $(document).ready(function (e) {
-            $("#calculate").on('submit', (function (e) {
-                e.preventDefault();
-                $.ajax({
-                    url: "php/cone-ajax.php",
-                    type: "POST",
-                    data: new FormData(this),
-                    contentType: false,
-                    cache: false,
-                    processData: false,
-                    beforeSend: function () {
-                        $("#cal").html('Please Wait...');
-                    },
-                    success: function (response) {
-                        $("#cal").html(response);
-                    }
-                });
-            }));
-        });
-    </script>
 </head>
 
 <body>
@@ -75,40 +47,31 @@
 <div class="container" style="margin-top:10%;">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-sx-12">
-            <h4>Volume and surface area of a cylinder (jQuery)</h4>
-            <div class="form-group">
-                <label>Cylinder radius</label>
-                <input type="text" class="form-control" id="cyl_radius" placeholder="Enter radius" required>
-            </div>
-            <div class="form-group">
-                <label>Cylinder height</label>
-                <input type="text" class="form-control" id="cyl_height" placeholder="Enter height" required>
-            </div>
-            <div class="form-group">
-                <button class="btn btn-primary pull-right" onclick="cyl_calc()">Calculate</button>
-            </div>
-
-            <div id="result"></div>
-        </div>
-
-        <div class="col-lg-6 col-md-6 col-sm-12 col-sx-12">
-            <h4>Volume and surface area of the cone (PHP)</h4>
-            <form method="post" action="php/cone.php">
+            <h4>Volume and surface area of a cylinder (jQuery with onload)</h4>
+            <form id="c_form">
                 <div class="form-group">
-                    <label>Cone radius</label>
-                    <input type="text" class="form-control" name="cone_radius" placeholder="Enter radius" required>
+                    <label>Cylinder radius:</label>
+                    <input type="text" class="form-control" id="c_radius" placeholder="Enter radius" required>
                 </div>
                 <div class="form-group">
-                    <label>Cone height</label>
-                    <input type="text" class="form-control" name="cone_height" placeholder="Enter height" required>
+                    <label>Cylinder height:</label>
+                    <input type="text" class="form-control" id="c_height" placeholder="Enter height" required>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-primary pull-right" type="submit" name="cone_submit">Calculate</button>
+                    <label>Cylinder volume:</label>
+                    <input type="text" class="form-control" id="c_volume">
+                </div>
+                <div class="form-group">
+                    <label>Cylinder surface area:</label>
+                    <input type="text" class="form-control" id="c_surface">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary pull-right" type="submit" id="submit" onclick="c_calc()">Calculate
+                    </button>
                 </div>
             </form>
         </div>
-    </div>
-    <div class="row">
+        <hr>
         <div class="col-lg-6 col-md-6 col-sm-12 col-sx-12">
             <h4>Volume and surface area of a cone (PHP and AJAX)</h4>
             <form id="calculate">
@@ -130,11 +93,86 @@
                 <div class="form-group">
                     <button class="btn btn-primary pull-right" type="submit">Calculate</button>
                 </div>
-                <div id="cal"></div>
+            </form>
+            <div id="cal"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-sx-12">
+            <h4>Volume and surface area of a cylinder (jQuery with alert)</h4>
+            <div class="form-group">
+                <label>Cylinder radius</label>
+                <input type="text" class="form-control" id="cyl_radius" placeholder="Enter radius" required>
+            </div>
+            <div class="form-group">
+                <label>Cylinder height</label>
+                <input type="text" class="form-control" id="cyl_height" placeholder="Enter height" required>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary pull-right" onclick="cyl_calc()">Calculate</button>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-sx-12">
+            <h4>Volume and surface area of the cone (PHP)</h4>
+            <form method="post" action="php/cone.php">
+                <div class="form-group">
+                    <label>Cone radius</label>
+                    <input type="text" class="form-control" name="cone_radius" placeholder="Enter radius" required>
+                </div>
+                <div class="form-group">
+                    <label>Cone height</label>
+                    <input type="text" class="form-control" name="cone_height" placeholder="Enter height" required>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary pull-right" type="submit" name="cone_submit">Calculate</button>
+                </div>
             </form>
         </div>
     </div>
 </div>
-
+<script type="text/javascript">
+    //jQuery + alert
+    function cyl_calc() {
+        var cyl_radius = document.getElementById('cyl_radius').value;
+        var cyl_height = document.getElementById('cyl_height').value;
+        var surface = 2 * Math.PI * cyl_radius * cyl_height + 2 * (Math.PI * (cyl_radius * cyl_radius));
+        var volume = Math.PI * cyl_radius * cyl_radius * cyl_height;
+        alert("Cylinder volume is: " + volume.toFixed(2) + "\nCylinder surface is: " + surface.toFixed(2));
+    }
+    //jQuery + onload
+    function c_calc() {
+        var c_radius = document.getElementById('c_radius').value;
+        var c_height = document.getElementById('c_height').value;
+        var c_volume = Math.PI * c_radius * c_radius * c_height;
+        var c_surface = 2 * Math.PI * c_radius * c_height + 2 * (Math.PI * (c_radius * c_radius));
+        c_volume = c_volume.toFixed(2);
+        c_surface = c_surface.toFixed(2);
+        document.getElementById('c_volume').value = c_volume;
+        document.getElementById('c_surface').value = c_surface;
+        return false;
+    }
+    window.onload = document.getElementById('c_form').onsubmit = c_calc;
+    //ajax
+    $(document).ready(function (e) {
+        $("#calculate").on('submit', (function (e) {
+            e.preventDefault();
+            $.ajax({
+                url: "php/cone-ajax.php",
+                type: "POST",
+                data: new FormData(this),
+                contentType: false,
+                cache: false,
+                processData: false,
+                beforeSend: function () {
+                    $("#cal").html('Please Wait...');
+                },
+                success: function (response) {
+                    $("#cal").html(response);
+                }
+            });
+        }));
+    });
+</script>
 </body>
 </html>
